@@ -1,0 +1,67 @@
+body{
+    font-family: "맑은 고딕","고딕","굴림";
+    background-color: #eee;
+}
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    background-color: blue;
+    overflow: hidden; /*높이가 정해져 있지 않으면 부모 내에서 자식 모두를 보여줌*/
+    padding: 10px;
+}
+header img{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+nav{
+    width: 500px;
+    float: right;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+section{
+    width: 600px;
+    float: left;
+}
+section h2{
+    margin-left: 10px;
+}
+article{
+    border: 1px solid plum;
+    width: 266px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+}
+aside{
+    background-color: antiquewhite;
+    width: 150px;
+    float: right;
+    margin-top: 73px;
+    margin-right: 10px;
+}
+aside img{
+    width: 150px;
+    height: 210px;
+}
+footer{
+    clear: both;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+body{
+    font-family: "맑은 고딕","고딕","굴림";
+}
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    background-color: palevioletred;
+    overflow: hidden;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+nav{
+    float: right;
+}
+nav ul{
+    padding-top: 20px;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+section{
+    width: 600px;
+    float: left; /*float할때는 무조건 width를 잡아야함.*/
+}
+article{
+    border: 1px solid #ddd;
+    width: 280px;
+    height: 280px;
+    float: left;
+    margin: 5px;
+    text-indent: 16px;
+    padding: 3px;
+}
+aside{
+    width: 200px;
+    height: 300px;
+    float: right;
+    margin-top: 77px;
+}
+aside img{
+    width: 200px;
+    height: 193px;
+}
+footer{
+    background-color: rgb(14, 13, 73);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    clear:both;
+}
+            /*덩어리 감이 잘 안 오면 보더라인 레드로 잡아주고 확인*/

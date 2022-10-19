@@ -1,0 +1,37 @@
+#container{
+    width: 960px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    /* 바디 안에서 컨테이너만 중간으로 오도록 해야 하므로 text-align: 쓰지 않음; */
+}
+header{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+section{
+    width: 620px;
+    height: 260px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    float: left;
+    margin-bottom: 20px;    
+}
+aside{
+    width: 220px;
+    height: 260px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    float: right;
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+footer{
+    border: 1px solid #ddd;
+    clear: both;
+    padding: 10px;
+}
+.greentext{
+    color: green;
+}
