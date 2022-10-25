@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(number2); // 사용가능
+        // // console.log(number); // 사용불가
+
+        // let number = 1; // 변수의 성질 결정해주는 let(변수 선언 후 사용 가능. 밑에 적어야 함.)
+        // console.log(number); // let 사용방법.
+
+        // number = 2; // 변수라서 새로운 데이터로 저장 가능. number가 1에서 2로 덮어씌워짐.
+        // number = 3; // 2에서 3으로 변경
+
+        // var number2 = 2; // 프로그램 어딘가에 var로 설정되어있으면 본 코드 위에 적어놔도 사용가능.(웬만하면 사용x)
+        // console.log(number2);
+
+        // const number3 = 10; // 한번 정해지면 값 변경 x
+        // number3 = 100; //적용x
+
+        // let studentCount = 1; // 카멜표기법
+
+        //원시형 데이터 타입 28p
+
+        //1. 숫자형 - 변수에 숫자 들어가는 경우
+        // let num = 1;
+        // let num2 = 2; // 변수이름은 모두 다르게.
+        // console.log(typeof num); // 변수 타입 콘솔창에서 확인할 때
+
+        // //2. 문자형 - 변수에 문자 들어가는 경우
+        // let str = 'javascript';
+        // let str2 = "javascript"; //작은따옴표 큰따옴표 js에서는 같음.
+        // console.log(typeof str);
+
+        // //3. 불리언(boolean) - true,false만 존재. 참 거짓 판단할 때 사용
+        // let bool = true;
+        // bool = false;
+        // console.log(typeof bool); 
+
+        // //4. 심볼 (나중에)
+
+        // //5. null - 빈 값. 변수를 초기화하지 않음.
+        // let variable = null; // 데이터가 저장되지 않음. 따옴표로 묶지 않아서 문자로 인식 x. 0이 아니다!
+        // console.log(variable);
+
+        // //6. undefined - 변수 자체가 선언되지 않음.
+        // console.log(data);
+
+        // //7. NaN - not a number(숫자가 아님) : 독자적으로 쓰지 못함. 문자->숫자 변환 시 숫자 외 다른 문자가 있을 때
+
+        // //참조형 데이터 타입 : 원시형을 뺀 나머지. 메모리 값을 넣음. 나중에.
+        // let aaa = 0x1112; //메모리 주소를 적어서 그 주소에 있는 데이터 가져옴.
+
+        //자료형 변환(숫자를 문자로 변환)
+
+        let str3 = "12345aaa";
+        let str4 = "123.123";
+
+        console.log(typeof str3);
+
+        //1. Number() // 변환 시 소수점까지 포함하여 데이터 변환. 문자 포함되면 NaN->숫자 x
+        let num3 = Number(str3); // Number로 인해 숫자->문자 변환
+
+        console.log(typeof num3);
+        console.log(num3); // 숫자 변환 확인
+
+        let num5 = Number(str4);
+
+        console.log(num5);
+
+        //2. parseInt() // 숫자 -> 문자 변환 시 문자를 빼고 숫자만 빼서 변환. 소수점 뒤는 변환x.
+        let num4 = parseInt(str3);
+
+        //참고. 소수점 가진 문자를 실수형으로 변환 시 사용.
+        // console.log(parseFloat(str4)); // 변수선언을 하지 않고 한 줄에도 가능.
+
+        console.log(num4);
+
+        let num6 = parseInt(str4);
+
+        console.log(num6);
+
+        //숫자 -> 문자로 변환
+        
+        //1. toString() // 처음 변수값이 null이나 undefined인 경우 오류.
+        
+        // num4 = null;
+        let str5 = num4.toString();
+        console.log(typeof str5);
+        console.log(str5); // 콘솔창에서 문자:검은색, 숫자:파란색으로 나옴.
+        
+        //2. String() <- 이걸 많이 쓸 듯.
+        
+        num4 = null; // 오류나지 않음!
+        let str6 = String(num4);
+        console.log(typeof str6);
+        console.log(str6);
+
+        //빈 문자열
+        //문자 : 'A' // 하나의 알파벳.
+        //문자열 : "ADSAFD" // 한 개 이상.
+
+        let str7 = '';
+
+   </script>
+</body>
+</html>

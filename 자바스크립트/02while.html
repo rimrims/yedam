@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //반복문 - while문
+        // while(표현식){ 
+        // }
+
+        //덧셈, 짝수,홀수
+
+        // let sum = 0;
+        // //1~10합
+        // while(true){ // 표현식이 참일 때 반복문 계속 돌아감.
+        //     sum = sum +1;
+        //     if(sum >= 10){
+        //         break;
+        //     }
+        // }
+        // console.log(sum);
+
+        // let sum = 0;
+        // //1~10합
+        // while(sum<10){
+        //     sum = sum +1;{
+        //     }
+        // }
+        // console.log(sum); // 위 코드와 같음.!
+
+        // let flag = true;
+        // sum=0;
+
+        // while(flag){
+        //     sum = sum +1;
+        //     if(sum==10){
+        //         flag = false; // flag가 false가 돼서 완전 종료됨.
+        //     }
+        // }
+        
+        // while(true){
+        //     sum = sum+1;
+        //     if(sum==10){
+        //         break; // 브레이크 만나서 반복문 완전 종료됨.
+        //     }
+        // }
+
+        // //1~100까지 수 중에서 짝수만 출력
+        // let even = 0;
+        // while(even<=100){
+        //     if(even % 2 == 0 && even!=0){
+        //         console.log("1과 100사이의 짝수"+even);
+        //     }
+        //     even++; // 증감식 안 넣어주면 0으로 계속 반복됨.
+        // }
+
+        //구구단
+
+        // let gugudan = 2;
+        // let num = 1;
+
+        // while(num <= 9){
+        //     console.log(gugudan+"*"+num+"="+gugudan*num);
+        //     num++;
+        // }
+
+        // flag=true;
+        // while(flag){                            //큰 틀을 만들 때 while문 많이 사용.
+        //     //메뉴 출력해주는 무언가 삽입
+        //     let sign = prompt("메뉴 선택");
+
+        //     switch(sign){
+        //         case 1: 
+        //         //구구단 구하기. for문으로
+        //         break;
+        //         case 2: 
+        //         //홀수 구하기
+        //         break;
+        //         case 3: 
+        //         //짝수 구하기
+        //         break;
+        //         case 4: 
+        //         //종료
+        //         flag=false;
+        //         break;
+        //     }
+        // }
+
+        //do~while문
+        // do{
+
+        // }while()
+
+        sum = 0;
+
+        do{
+            sum=sum+1; // 먼저 실행함.
+        }while(sum < 1) // 조건확인
+
+        //1~100까지의 숫자의 합 구하기. do~while
+        sum = 0;
+        let temp = 1;
+        do{
+            sum=sum +temp;
+            temp++;
+        }while(sum < 100)
+        console.log(sum);
+
+
+    </script>
+</body>
+</html>

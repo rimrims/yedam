@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print</title>
+</head>
+<body>
+    <h1>h1테스트</h1>
+    <script>        
+
+        let sign = prompt("당신의 별자리는 무엇입니까?");
+        if(sign.toLowerCase() === "전갈자리" ){ // 창에 입력하면
+            alert("저도 전갈자리입니다!");
+        }
+        sign = window.prompt();
+        sign = prompt(); // 두 개 같음
+        console.log(sign); // f12 콘솔창에서 확인 가능
+        sign = window.prompt("오늘 너무 춥습니까?","예"); // 입력창에 '예'라고 입력되어있음
+        document.write("<input type=input value='123'>"); // 인풋창에 123입력되어있음
+        let str = "<input type=input value='123'>";
+        str += "<h1>테스트</h1>"; // 합쳐져서 화면 출력.
+        // console.log("자바스크립트"); /*원하는 데이터 들어왔는지 등 확인할 때*/
+    </script>
+</body>
+</html>
